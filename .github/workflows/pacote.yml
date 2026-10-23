@@ -1,0 +1,27 @@
+name: Pacote para o site do Claude
+# A cada mudança na skill, gera o cfm-saude-digital.zip e publica na versão "ultima-versao".
+# Endereço fixo: https://github.com/360hct/cfm-saude-digital/releases/latest/download/cfm-saude-digital.zip
+on:
+  push:
+    branches: [main]
+    paths: ["skills/**"]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  pacote:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Gerar o .zip (pasta da skill na raiz, como o site do Claude pede)
+        run: cd skills && zip -qrX ../cfm-saude-digital.zip cfm-saude-digital
+      - name: Publicar na versão "ultima-versao"
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh release delete ultima-versao --cleanup-tag --yes || true
+          gh release create ultima-versao cfm-saude-digital.zip --target "$GITHUB_SHA" --latest \
+            --title "Última versão ($(TZ=America/Sao_Paulo date +%d/%m/%Y))" \
+            --notes "Para o site ou o app do Claude: baixe o cfm-saude-digital.zip e envie em Configurações, na parte de Skills. No Claude Code, use npx skills (veja o README)."
