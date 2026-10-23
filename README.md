@@ -15,47 +15,46 @@ A skill é apoio técnico. Ela não substitui advogado nem consulta à Codame do
 
 ## Instalar
 
+**Recomendado: instale junto as skills de LGPD e de regras da Google Play.** Esta skill cobre CFM, telemedicina e Anvisa. As outras duas completam a revisão:
+
+- **lgpd**: proteção dos dados dos pacientes (LGPD e ANPD). Autor: sushegaad, licença MIT.
+- **play-policy-insights**: regras da Google Play para publicar app Android. Autor: Google, licença Apache 2.0.
+
+As duas são de outros autores e vêm direto dos repositórios deles, então recebem as atualizações deles.
+
 ### No Claude Code
+
+Cole os três comandos no Terminal. O primeiro instala esta skill e os outros dois instalam as recomendadas:
 
 ```bash
 npx -y skills add 360hct/cfm-saude-digital -g -y -a claude-code
+npx -y skills add sushegaad/claude-skills-governance-risk-and-compliance --skill lgpd -g -y -a claude-code
+npx -y skills add android/skills --skill play-policy-insights -g -y -a claude-code
 ```
 
 Depois, abra uma sessão nova.
 
 ### No site ou no app do Claude
 
-1. Baixe o arquivo: [cfm-saude-digital.zip](https://github.com/360hct/cfm-saude-digital/releases/latest/download/cfm-saude-digital.zip).
+1. Baixe os arquivos:
+   - esta skill: [cfm-saude-digital.zip](https://github.com/360hct/cfm-saude-digital/releases/latest/download/cfm-saude-digital.zip);
+   - a recomendada de LGPD: [lgpd.skill](https://github.com/sushegaad/claude-skills-governance-risk-and-compliance/raw/main/plugins/lgpd/lgpd.skill).
 2. No Claude, abra Configurações e vá até a parte de Skills. Se ela não aparecer, ligue antes a execução de código e criação de arquivos.
-3. Envie o arquivo como ele veio, sem descompactar.
+3. Envie cada arquivo como ele veio, sem descompactar.
+
+A skill da Google Play não tem arquivo pronto para o site. Ela é mais útil no Claude Code, para quem desenvolve app Android.
 
 ## Atualizar
 
-No Claude Code, este comando busca a versão nova de todas as skills instaladas pelo `npx skills`:
+No Claude Code, este comando busca a versão nova das três skills, e de qualquer outra instalada pelo `npx skills`:
 
 ```bash
 npx -y skills update -g -y
 ```
 
-No site ou no app do Claude, a skill não se atualiza sozinha. Para atualizar, baixe o arquivo de novo pelo mesmo link e envie outra vez. O link sempre entrega a versão mais recente.
+No site ou no app do Claude, as skills não se atualizam sozinhas. Para atualizar, baixe os arquivos de novo pelos mesmos links e envie outra vez. Os links sempre entregam a versão mais recente.
 
-## Skills que combinam com esta
-
-Elas são de outros autores e se atualizam pelo mesmo comando `npx -y skills update -g -y`.
-
-- **LGPD**, para proteção de dados de pacientes (autor: sushegaad, licença MIT):
-
-  ```bash
-  npx -y skills add sushegaad/claude-skills-governance-risk-and-compliance --skill lgpd -g -y -a claude-code
-  ```
-
-  No site do Claude, baixe [lgpd.skill](https://github.com/sushegaad/claude-skills-governance-risk-and-compliance/raw/main/plugins/lgpd/lgpd.skill) e envie em Configurações, na parte de Skills.
-
-- **Regras da Google Play**, para quem publica app Android (autor: Google, licença Apache 2.0):
-
-  ```bash
-  npx -y skills add android/skills --skill play-policy-insights -g -y -a claude-code
-  ```
+Se você instalou só esta skill, ela mesma vai lembrar de instalar as duas recomendadas quando o assunto for dados pessoais ou app Android.
 
 ## Como usar
 

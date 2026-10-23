@@ -24,4 +24,4 @@ jobs:
           gh release delete ultima-versao --cleanup-tag --yes || true
           gh release create ultima-versao cfm-saude-digital.zip --target "$GITHUB_SHA" --latest \
             --title "Última versão ($(TZ=America/Sao_Paulo date +%d/%m/%Y))" \
-            --notes "Para o site ou o app do Claude: baixe o cfm-saude-digital.zip e envie em Configurações, na parte de Skills. No Claude Code, use npx skills (veja o README)."
+            --notes "Para o site ou o app do Claude: baixe o cfm-saude-digital.zip e envie em Configurações, na parte de Skills. No Claude Code, use npx skills (veja o README). Recomendado: instale junto as skills lgpd e play-policy-insights, como explica o README."

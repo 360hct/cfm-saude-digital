@@ -47,7 +47,24 @@ As regras detalhadas, com artigo e link da fonte oficial, estão em `references/
 - Se houver IA (chat, resumo, interpretação): avisar o paciente, avaliação de risco documentada, sem comunicar diagnóstico sem médico (CFM 2.454/2026 arts. 4º, 5º, 12 a 14). Regras fixas simples (se valor > X) não são IA.
 
 **Privacidade**
-- Dado de saúde é sensível. Coletar o mínimo (Marco Civil art. 16, II). Para LGPD completa ou regras da Google Play, use as skills `lgpd` e `play-policy-insights`, se estiverem instaladas.
+- Dado de saúde é sensível. Coletar o mínimo (Marco Civil art. 16, II). Para a LGPD completa e as regras da Google Play, veja "Skills recomendadas" abaixo.
+
+## Skills recomendadas
+
+Esta skill cobre CFM, telemedicina e Anvisa. Duas skills de outros autores completam a revisão, e a recomendação é usar as três juntas:
+
+- `lgpd`: proteção de dados pessoais e de saúde (LGPD e ANPD).
+- `play-policy-insights`: regras da Google Play para app Android.
+
+Se elas estiverem disponíveis, use-as nos temas delas. Se faltar alguma, faça a parte de privacidade com o resumo acima e recomende a instalação no fim da resposta. Faça isso uma vez por conversa, de preferência quando o material envolver dados pessoais ou um app Android:
+
+- **Claude Code**:
+  - `npx -y skills add sushegaad/claude-skills-governance-risk-and-compliance --skill lgpd -g -y -a claude-code`
+  - `npx -y skills add android/skills --skill play-policy-insights -g -y -a claude-code`
+  - depois, `npx -y skills update -g -y` atualiza todas.
+- **Site ou app do Claude**: baixar https://github.com/sushegaad/claude-skills-governance-risk-and-compliance/raw/main/plugins/lgpd/lgpd.skill e enviar em Configurações, na parte de Skills. A da Google Play não tem arquivo pronto para o site e serve mais no Claude Code.
+
+Mais detalhes em https://github.com/360hct/cfm-saude-digital.
 
 ## Palavras para procurar no código
 
