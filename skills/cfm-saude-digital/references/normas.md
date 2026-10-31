@@ -45,7 +45,8 @@ Pesquisa feita em 21/10/2026 lendo os textos oficiais (CFM, DOU, Planalto, Bibli
 | 11 §4º "a" | Vedado condicionar o acesso a conteúdo a dados pessoais ou pagamento. |
 | 11 §4º "c" | Vedado anunciar serviços médicos gratuitos em consultório privado. Pelo Manual, é sobre anunciar gratuidade de atendimento. App grátis não é atendimento médico, mas não anunciar "consulta grátis". |
 | 13, V | Permite consultar a Codame do CRM. |
-| 14, II "b", "e", "f", "g" | Antes e depois só em conjunto (evoluções boas, ruins e complicações), sem identificar o paciente, sem editar imagens; depoimentos sóbrios. |
+| 8º, III, e §§3º e 4º | Selfie, imagens e áudios permitidos sem sensacionalismo. Post de paciente repostado vira publicação do médico; elogios reiterados à técnica e ao resultado são investigados pela Codame. |
+| 14, II "a" a "i" | Antes e depois **permitido**, só educativo e em conjunto (indicações, evoluções boas, ruins e complicações), com texto sobre fatores e complicações da literatura, sem identificar o paciente (mesmo com autorização), sem editar imagens, com autorização escrita e fonte do banco de imagens; depoimentos sóbrios, sem adjetivo de superioridade nem promessa. Sem alteração até 31/10/2026 (texto oficial reconferido). |
 
 ## 3. Telemedicina — Res. CFM 2.314/2022 e Lei 14.510/2022
 

@@ -19,13 +19,13 @@ As regras detalhadas, com artigo e link da fonte oficial, estão em `references/
 ## Checklist rápido
 
 **Identificação e publicidade**
-- O médico aparece com nome, a palavra MÉDICO e CRM/UF (CFM 2.336 arts. 4º e 6º; CEM art. 117)? Repetido em material compartilhável (PDF, link, mensagem)?
+- O médico aparece com nome, a palavra MÉDICO e CRM/UF na página principal (tela inicial, perfil, bio) (CFM 2.336 arts. 4º e 6º; CEM art. 117)? Cada post do próprio perfil não precisa repetir (Manual da Codame, item 6), mas o material que circula sozinho precisa (PDF, imagem ou link enviado por WhatsApp ou Telegram, peça em perfil de terceiros); vídeo publicitário, em todos os quadros (item 5).
 - Cita especialidade? Só com RQE. Clínico geral não pode se anunciar como quem "trata diabetes" ou "especialista em hipertensão" (2.336 art. 11, I).
 - Promete resultado ("controle sua glicemia em 30 dias")? Vedado (2.336 art. 11, XII; CEM art. 112).
 - Usa medo, pânico, cores ou frases alarmistas para empurrar consulta? Vedado (2.336 art. 11, XVI e §2º "e"; CDC art. 37, §2º).
 - Anuncia "consulta grátis"? Vedado (2.336 art. 11, §4º "c"). App grátis é permitido; consulta grátis anunciada, não.
 - Exige cadastro ou dados para liberar conteúdo? Vedado (2.336 art. 11, §4º "a").
-- Depoimento ou antes e depois identificável? Vedado (CEM art. 75; 2.336 art. 14).
+- Antes e depois ou depoimento? Permitidos com condições (2.336 art. 14, II). Antes e depois só educativo, num conjunto com evoluções satisfatórias, insatisfatórias e complicações, texto com indicações e complicações da literatura, sem edição, com autorização escrita e sem identificar o paciente. Depoimento só sóbrio, sem adjetivo de superioridade nem promessa (alínea "g"); repostar torna o conteúdo do médico (art. 8º, §3º). Paciente reconhecível segue vedado mesmo com autorização (CEM art. 75; 2.336 art. 14, II, "e" e "i"). Sobre efeito de medicamento ou produto, vira propaganda que induz resultado (2.336 art. 11, IV e XII).
 - Preço da consulta: pode, com forma de pagamento clara, sem brinde nem venda casada (2.336 art. 9º, VI e VIII).
 - Conflito de interesse (farmácia, laboratório, indústria, comissão, cashback, receita direcionada)? Vedado (CEM arts. 58, 68, 69; CFM 2.299 art. 11; CFM 2.460/2026 [não confirmado]).
 
